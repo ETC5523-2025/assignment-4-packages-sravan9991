@@ -1,9 +1,9 @@
 {
     "id": "B8E7D435",
-    "path": "~/Group Assignment High Dimentional Data Analysis/NetflixExplorer/DESCRIPTION",
+    "path": "~/ETC5523/shinyapp/NetflixExplorer/DESCRIPTION",
     "project_path": "DESCRIPTION",
     "type": "dcf",
-    "hash": "2797579179",
+    "hash": "0",
     "contents": "",
     "dirty": false,
     "created": 1761998639670.0,
@@ -16,11 +16,11 @@
         "scrollLine": "0"
     },
     "folds": "",
-    "lastKnownWriteTime": 1762000359,
+    "lastKnownWriteTime": 1762063367,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1762000359194,
+    "last_content_update": 1762063367,
     "read_only": false,
     "read_only_alternatives": []
 }
