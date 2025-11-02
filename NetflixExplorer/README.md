@@ -11,7 +11,11 @@ The goal of netflixExplorer is to ...
 You can install the development version of netflixExplorer like so:
 
 ``` r
-# FILL THIS IN! HOW CAN PEOPLE INSTALL YOUR DEV PACKAGE?
+# Installed from GitHub
+
+remotes::install_github("ETC5523-2025/assignment-4-packages-and-shiny-apps-Sravan9991")
+library(netflixExplorer)
+launch_app()
 ```
 
 ## Example
