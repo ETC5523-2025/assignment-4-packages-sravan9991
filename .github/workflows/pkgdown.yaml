@@ -51,6 +51,12 @@ jobs:
           remotes::install_deps(dependencies = TRUE)
         shell: Rscript {0}
       
+      - name: Install the package
+        working-directory: NetflixExplorer
+        run: |
+          remotes::install_local(".", upgrade = "never", force = TRUE)
+        shell: Rscript {0}
+      
       - name: Fix pkgdown configuration
         working-directory: NetflixExplorer
         run: |
@@ -68,6 +74,7 @@ jobs:
               home:
                 icon: fas fa-home
                 href: index.html
+                aria-label: Home
               reference:
                 text: Reference
                 href: reference/index.html
