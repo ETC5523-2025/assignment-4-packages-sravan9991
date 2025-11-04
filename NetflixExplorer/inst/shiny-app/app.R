@@ -92,6 +92,7 @@ server <- function(input, output) {
   # Table: Preview filtered data
   # -----------------------------------------------------
   output$table <- renderTable({
+
     head(filtered_data(), 10)
   })
 }
