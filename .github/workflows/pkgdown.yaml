@@ -51,6 +51,45 @@ jobs:
           remotes::install_deps(dependencies = TRUE)
         shell: Rscript {0}
       
+      - name: Fix pkgdown configuration
+        working-directory: NetflixExplorer
+        run: |
+          cat > _pkgdown.yml << 'EOF'
+          url: https://ETC5523-2025.github.io/assignment-4-packages-and-shiny-apps-Sravan9991
+          
+          template:
+            bootstrap: 5
+          
+          navbar:
+            structure:
+              left: [home, reference, articles]
+              right: [search, github]
+            components:
+              home:
+                icon: fas fa-home
+                href: index.html
+              reference:
+                text: Reference
+                href: reference/index.html
+              articles:
+                text: Articles
+                menu:
+                  - text: Getting Started
+                    href: articles/netflixExplorer.html
+              github:
+                icon: fab fa-github
+                href: https://github.com/ETC5523-2025/assignment-4-packages-and-shiny-apps-Sravan9991
+                aria-label: GitHub
+          EOF
+      
+      - name: Update DESCRIPTION URL
+        working-directory: NetflixExplorer
+        run: |
+          if ! grep -q "^URL:" DESCRIPTION; then
+            echo "URL: https://ETC5523-2025.github.io/assignment-4-packages-and-shiny-apps-Sravan9991" >> DESCRIPTION
+            echo "BugReports: https://github.com/ETC5523-2025/assignment-4-packages-and-shiny-apps-Sravan9991/issues" >> DESCRIPTION
+          fi
+      
       - name: Build pkgdown site
         working-directory: NetflixExplorer
         run: |
