@@ -1,8 +1,6 @@
 # bushfireRisk <img src="man/figures/logo.png" align="right" height="139" />
 
-<!-- badges: start -->
-[![R-CMD-check](https://github.com/ETC5523-2025/assignment-4-packages-sravan9991/workflows/R-CMD-check/badge.svg)](https://github.com/ETC5523-2025/assignment-4-packages-sravan9991/actions)
-<!-- badges: end -->
+
 
 ## Overview
 
